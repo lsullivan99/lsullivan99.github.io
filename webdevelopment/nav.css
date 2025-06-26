@@ -7,3 +7,33 @@ padding: 15px 15px 15px 25px;
 margin-top: 0;
 margin-left: 10px;
 }
+ul li {
+    position: relative;
+}
+
+ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    white-space: nowrap;
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    border: 1px solid #4CAF50;
+    z-index: 1;
+}
+
+ul li:hover ul {
+    display: flex;
+    flex-direction: row;
+}
+
+ul li ul li {
+    display: inline-block;
+    border: solid 1px #4CAF50;
+    width: auto;
+    padding: 10px 20px;
+    margin: 0;
+    background: #fff;
+}
