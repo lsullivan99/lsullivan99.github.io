@@ -1,6 +1,6 @@
 ul li {
 display: inline-block;  
-border: 3px #4CAF50;
+border:dotted 5px #4CAF50;
 width: 150px;
 list-style-type: none;
 padding: 15px 15px 15px 25px;
