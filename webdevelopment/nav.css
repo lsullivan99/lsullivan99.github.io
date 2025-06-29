@@ -26,7 +26,7 @@ ul li ul {
 
 ul li:hover ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 ul li ul li {
