@@ -1,11 +1,11 @@
 ul li {
 display: inline-block;  
-border:solid 5px #4CAF50;
-width: 50px;
+border:solid 5px #4e81a0;
+width: 60px;
 list-style-type: none;
 padding: 15px 15px 15px 25px;
 margin-top: 0;
-margin-left: 10px;
+margin-left: 8px;
 }
 ul li {
     position: relative;
@@ -16,11 +16,11 @@ ul li ul {
     position: absolute;
     top: 100%;
     left: 0;
-    white-space: nowrap;
+    white-space:nowrap;
     padding: 0;
     margin: 0;
     background: #fff;
-    border: 1px solid #4CAF50;
+    border: 1px solid #4e81a0;
     z-index: 1;
 }
 
@@ -31,7 +31,7 @@ ul li:hover ul {
 
 ul li ul li {
     display: inline-block;
-    border: solid 1px #4CAF50;
+    border: solid 1px #080a0b;
     width: auto;
     padding: 10px 20px;
     margin: 0;

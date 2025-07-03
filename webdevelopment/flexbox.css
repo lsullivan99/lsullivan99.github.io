@@ -1,0 +1,13 @@
+.flex-container {
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    align-items: center;     /* centers vertically */
+    height: 100vh;           /* full viewport height */
+}
+
+.flex-container p {
+    font-size: 1.2rem;
+    padding: 16px;
+    background: #f0f0f0;
+    border-radius: 8px;
+}
