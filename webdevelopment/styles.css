@@ -8,6 +8,11 @@ a {
     display: flex;
     flex-direction: row;
     gap: 16px;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+}
+
+@media screen and (max-width: 959px) {
+    #container {
+       width: 100%
+    }
 }

@@ -8,88 +8,134 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 15px;
+            background-color: #4e81a0;
+        }
+        header {
+            background: #688495;
+            color: #4e81a0;
+            padding: 10px 0;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            max-width: 10000px;
+            margin: auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4e81a0;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .dropdown {
+            position: relative;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #4e81a0;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropbtn {
+            cursor: pointer;
+        }
+        </style>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="nav.css">
-    <meta charset="utf-8">
-    <title>Page Title</title>
-        <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li class="dropdown">
-                <a href="#learn.html" class="dropbtn">Learn</a>
-                <ul class="dropdown-content">
-                    <li><a href="link 1">link 1</a></li>
-                    <li><a href="link 2">Link 2</a></li>
-                    <li><a href="link 3">link 3</a></li>
-                </ul>
-            <li><a href="reference.html">Resorces</a></li>
-            <li><a href="#contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <link rel="stylesheet" href="flexbox.css">
+    <title>Resources</title>
 </head>
 <body>
+     <nav>
+<a href="#" id="menu-icon">&#9776;</a>
+<ul>
+        <li class="active">
+                <a href="index.html">Home</a>
+                </li>
+        <li>
+                <a href="about.html">About</a>
+                </li>
+        <li>
+                <a href="#learn.html">Learn</a>
+                <ul id="mobileHide">
+                        <!-- Links for the dropdown menu -->
+                        <li><a href="#link 1">Link 1</a></li>
+                        <li><a href="#Link 2">Link 2</a></li>
+                        <li><a href="#Link 3">Link 3</a></li>
+                </ul>       
+        </li>
+        <li>
+                <a href="reference.html">Resources</a>
+                <li class="lastMobileHide">
+                <a href="#contact.html">Contact</a>
+        </li>
+</ul> 
+</nav>
     <header>
         <h1>Resource Page</h1>
     </header>
     <main>
-        <h2>Sorces Cited</h2>
-        <p>"Types of Volcano." British Geological Survey, 
-            <br>
-            www.bgs.ac.uk/discovering-geology/earth-hazards/volcanoes/how-volcanoes-form/. Accessed 8 Jun. 2025.
-            <br>
-            <a href="https://www.bgs.ac.uk/discovering-geology/earth-hazards/volcanoes/how-volcanoes-form/">https://www.bgs.ac.uk/discovering-geology/earth-hazards/volcanoes/how-volcanoes-form/</a>
-<br>
-<br>
-        "What Are Volcanoes? Crash Course Geography #21." 
-        <br>
-        YouTube, uploaded by Crash Course, 26 Jul. 2021, www.youtube.com/watch?v=cnKoTlUaqAs.
-        <br>
-        <a href="https://www.youtube.com/watch?v=cnKoTlUaqAs">https://www.youtube.com/watch?v=cnKoTlUaqAs</a>
-<br>
-<br>
-        "Volcanoes, Craters, & Lava Flows." National Park Service, 18 Oct. 2022, 
-        <br>
-        www.nps.gov/subjects/volcanoes/index.htm. Accessed 8 Jun. 2025.
-        <br>
-        <a href="https://www.nps.gov/subjects/volcanoes/index.htm">https://www.nps.gov/subjects/volcanoes/index.htm</a>
-<br>
-<br>
-        Wald, Lisa. "The Science of Earthquakes." USGS,
-        <br>
-        www.usgs.gov/programs/earthquake-hazards/science-earthquakes. Accessed 8 Jun. 2025.
-        <br>
-        <a href="https://www.usgs.gov/programs/earthquake-hazards/science-earthquakes">https://www.usgs.gov/programs/earthquake-hazards/science-earthquakes</a>
-<br>
-<br>
-        "Climate Change Has Consequences for the Earth System and Human Lives." 
-        <br>
-        CLEAN, 11 Sept. 2024, cleanet.org/clean/literacy/principle_7.html. Accessed 8 Jun. 2025.
-        <br>
-        <a href="https://cleanet.org/clean/literacy/principle_7.html">https://cleanet.org/clean/literacy/principle_7.html</a>
-<br>
-<br>
-    "Climate Literacy Quiz." CLEAN, 27 Aug. 2018, 
-    <br>
-    cleanet.org/clean/literacy/climate/quiz.html. Accessed 8 Jun. 2025.
-    <br>
-    <a href="https://cleanet.org/clean/literacy/climate/quiz.html">https://cleanet.org/clean/literacy/climate/quiz.html</a>
-<br>
-<br>
-        "CLEAN Principle 7." CLEAN, uploaded by CLEAN Principle, 5 May 2021, 
-        <br>
-        cleanet.org/details/files/436397.html.
-        <br>
-        <a href="https://cdn.serc.carleton.edu/files/clean/literacy/climate/clean_principle_4_climate_variable_video.mp4">https://cdn.serc.carleton.edu/files/clean/literacy/climate/clean_principle_4_climate_variable_video.mp4</a>
-    </p>
-        <br>
-        <h2></h2>
-        <p> </p>
-    </main>
+        <h2>Sources Cited</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <strong>"Types of Volcano."</strong> British Geological Survey<br>
+                www.bgs.ac.uk/discovering-geology/earth-hazards/volcanoes/how-volcanoes-form/. Accessed 8 Jun. 2025.<br>
+                <a href="https://www.bgs.ac.uk/discovering-geology/earth-hazards/volcanoes/how-volcanoes-form/">Visit Source</a>
+            </div>
+            <div class="grid-item">
+                <strong>"What Are Volcanoes? Crash Course Geography #21."</strong><br>
+                YouTube, uploaded by Crash Course, 26 Jul. 2021, www.youtube.com/watch?v=cnKoTlUaqAs.<br>
+                <a href="https://www.youtube.com/watch?v=cnKoTlUaqAs">Visit Source</a>
+            </div>
+            <div class="grid-item">
+                <strong>"Volcanoes, Craters, & Lava Flows."</strong> National Park Service, 18 Oct. 2022<br>
+                www.nps.gov/subjects/volcanoes/index.htm. Accessed 8 Jun. 2025.<br>
+                <a href="https://www.nps.gov/subjects/volcanoes/index.htm">Visit Source</a>
+            </div>
+            <div class="grid-item">
+                <strong>Wald, Lisa. "The Science of Earthquakes."</strong> USGS<br>
+                www.usgs.gov/programs/earthquake-hazards/science-earthquakes. Accessed 8 Jun. 2025.<br>
+                <a href="https://www.usgs.gov/programs/earthquake-hazards/science-earthquakes">Visit Source</a>
+            </div>
+            <div class="grid-item">
+                <strong>"Climate Change Has Consequences for the Earth System and Human Lives."</strong><br>
+                CLEAN, 11 Sept. 2024, cleanet.org/clean/literacy/principle_7.html. Accessed 8 Jun. 2025.<br>
+                <a href="https://cleanet.org/clean/literacy/principle_7.html">Visit Source</a>
+            </div>
+            <div class="grid-item">
+                <strong>"Climate Literacy Quiz."</strong> CLEAN, 27 Aug. 2018<br>
+                cleanet.org/clean/literacy/climate/quiz.html. Accessed 8 Jun. 2025.<br>
+                <a href="https://cleanet.org/clean/literacy/climate/quiz.html">Visit Source</a>
+            </div>
+            <div class="grid-item">
+                <strong>"CLEAN Principle 7."</strong> CLEAN, uploaded by CLEAN Principle, 5 May 2021<br>
+                cleanet.org/details/files/436397.html.<br>
+                <a href="https://cdn.serc.carleton.edu/files/clean/literacy/climate/clean_principle_4_climate_variable_video.mp4">Visit Source</a>
+            </div>
+            </div>
+            </main>
+
     <footer>
       <p><a href="mailto:lmshwk@umsystem.edu">lmshwk@umsystem.edu</a> (©Lydia Sullivan 2025)</p>
     </footer>
-
-
-</body>
 </html>

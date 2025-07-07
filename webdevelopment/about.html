@@ -3,12 +3,13 @@
     Description: Educator Credentials page for Lydia Sullivan
     Author: Lydia Sullivan
     Date: 2025
-    Course: Web Development Module 4
+    Course: Web Development Module 
 -->
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
     <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -63,15 +64,17 @@
             padding: 16px;
             width: fit-content;
             background-color: #b6d2e0a9;
-            border-radius: 8px;
-            margin-bottom: 16px;
+            border-radius: 4px;
+            margin-bottom: 12px;
             }
-            .resume-box a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
+  .resume-video {
+            border: 4px solid #4e81a0;
+            padding: 16px;
+            width: fit-content;
+            background-color: #b6d2e0a9;
+            border-radius: 4px;
+            margin-bottom: 12px;
             }
- 
     </style>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="nav.css">
@@ -79,36 +82,57 @@
     <title>Educator Credentials</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li class="dropdown">
-                <a href="#learn.html" class="dropbtn">Learn</a>
-                <ul class="dropdown-content">
-                    <li><a href="link 1">Link 1</a></li>
-                    <li><a href="Link 2">Link 2</a></li>
-                    <li><a href="Link 3">Link 3</a></li>
-                </ul>
-            <li><a href="reference.html">Resources</a></li>
-            <li><a href="#contact.html">Contact</a></li>
-        </ul>
-     </nav>
+   <nav>
+<a href="#" id="menu-icon">&#9776;</a>
+<ul>
+        <li class="active">
+                <a href="index.html">Home</a>
+                </li>
+        <li>
+                <a href="about.html">About</a>
+                </li>
+        <li>
+                <a href="#learn.html">Learn</a>
+                <ul id="mobileHide">
+                        <!-- Links for the dropdown menu -->
+                        <li><a href="#link 1">Link 1</a></li>
+                        <li><a href="#Link 2">Link 2</a></li>
+                        <li><a href="#Link 3">Link 3</a></li>
+                </ul>       
+        </li>
+        <li>
+                <a href="reference.html">Resources</a>
+                <li class="lastMobileHide">
+                <a href="#contact.html">Contact</a>
+        </li>
+</ul> 
+</nav>
 
     <header>
         <h1>Educators Credentials</h1>
     </header>
     <main>
-        <h1> Lydia Sullivan </h1>
-        <h3>Credentials Page</h3>
-        <p> My name is Lydia Sullivan, and I am from <em>Kansas City, Missouri</em>. As a highschooler, I became interested in Earth Science to the point where I decided to attend the <em>University of Missouri</em> to study Geology. 
+        <div class="grid-container">
+            <div class="grid-item">
+                <!-- Empty grid item for layout purposes -->
+            </div>
+            <div class="grid-item">
+                 <img src="https://musarahdumas.wordpress.com/wp-content/uploads/2015/10/columns2.jpg" alt="A Picture of Me" width="400">
+                <h2> Lydia Sullivan</h2>
+                <p>My name is Lydia Sullivan, and I am from <em>Kansas City, Missouri</em>. As a highschooler, I became interested in Earth Science to the point where I decided to attend the <em>University of Missouri</em> to study Geology. 
             As much as I loved Geology, being a teacher had always been in the back of my mind. I decided to switch my degree to Secondary Education with an Emphasis in Earth Science, and I minored in Geology. After college, I moved to Kansas City, Missouri, to teach at William Chrisman High School, where I have been teaching for the past three years! Not only have I taught Earth Science and Physical Science. I decided to get my master's in <b>Learning Technologies and Design</b> to help my students learn in new and exciting ways!</p>
-        <br>
-        <blockquote>"A good teacher can inspire hope, ignite the imagination, and instill a love of learning." - Brad Henry</blockquote>
-       <br>
-       
+            </div>
+            <div class="grid-item">
+                <h3>Favorite Quote</h3>
+                    <p>"A good teacher can inspire hope, ignite the imagination, and instill a love of learning." - Brad Henry <p>
+    
+            </div>
+            </div>
         <div class="resume-box">
             <a href="Resume.pdf">Resume</a>
+        </div>
+        <div class="resume-video">
+            <a href="https://www.powtoon.com/online-presentation/bnZMRNYcAry/?utm_medium=social-share&utm_campaign=studio+share&utm_source=copy+link&utm_content=bnZMRNYcAry&utm_po=50432318&mode=movie">Resume Video</a>
         </div>
     </main>
     <footer>
