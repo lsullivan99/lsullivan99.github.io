@@ -1,5 +1,14 @@
+@font-face { 
+
+font-family: montserrat;
+
+src: url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+}
+
 h1 {
     color: rgba(3, 3, 14, 0.726);
+    font-family: montserrat;
 }
 a {
     color: rgb(11, 11, 11);
@@ -15,4 +24,42 @@ a {
     #container {
        width: 100%
     }
+}
+
+.education {
+    font-family: montserrat;
+}
+
+ header {
+     background: #688495;
+    color: #4e81a0;
+    padding: 10px 0;
+    text-align: center;
+}
+ footer {
+     text-align: center;
+     padding: 10px 0;
+    background-color: #4e81a0;
+     color: #ffffff;
+     position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media print {
+   /* Hide elements that are not needed in print */
+    header,
+    nav,
+    img {
+        display: none;
+    }
+    /* Adjust layout for print */
+/* Include elements that should be visible in print */
+;
+}
+footer {
+    display: block !important;
+}
+p, h1, h2, h3 {
+    font-size: 12pt;
 }
