@@ -34,6 +34,7 @@ a {
 
 .education {
     font-family: montserrat;
+    border: none;
 }
 
 
@@ -46,7 +47,6 @@ a {
     }
     /* Adjust layout for print */
 /* Include elements that should be visible in print */
-;
 }
 footer {
     display: block !important;

@@ -1,0 +1,151 @@
+<!--
+    File: learn.html
+    Description: Educational page about volcanoes, earthquakes, and climate.
+    Author: Lydia Sullivan
+    Last updated: 2025
+-->
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+        <link rel="shortcut icon" type="image/png" href="favicon-16x16.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 15px;
+            background-color: #4e81a0;
+        }
+        header {
+            background: #688495;
+            color: #4e81a0;
+            padding: 10px 0;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            max-width: 10000px;
+            margin: auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            color: #0b0303;
+            bottom: 0;
+            width: 100%;
+        background-image: url('footer_earth.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        }
+        .dropdown {
+            position: relative;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #4e81a0;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropbtn {
+            cursor: pointer;
+        }
+        </style>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="nav.css">
+        <title>Let's Learn</title>
+</head>
+<body>
+<nav>
+<input type="checkbox" id="menu-toggle">
+
+<label for="menu-toggle" id="hamburger">&#9776;</label>
+<ul>
+        <li class="active">
+                <a href="index.html">Home</a>
+                </li>
+        <li>
+                <a href="about.html">About</a>
+                </li>
+        <li>
+                <a href="learn.html">Learn</a>
+                <ul id="mobileHide">
+                        <!-- Links for the dropdown menu -->
+                    <li><a href="#Volcanoes">Volcanoes</a></li>
+                    <li><a href="#Earthquakes">Earthquakes</a></li>
+                    <li><a href="#Climate">Weather & Climate</a></li>
+                </ul>       
+        </li>
+        <li>
+                <a href="reference.html">Resources</a>
+                <li class="lastMobileHide">
+                <a href="#contact.html">Contact</a>
+        </li>
+</ul> 
+</nav>
+    <header>
+        <h1>Let's Learn!</h1>
+    </header>
+    <main>
+         <div class="grid-container"></div>
+        <div class="grid-item">
+            <div>
+                <div id="Volcanoes"></div>
+                <br>
+                <br>
+                <h2>Volcanoes</h2>
+                <img src="volcanopicture.png" alt="Volcano" style="max-width:100%; height:auto; display:block; margin:0 auto;">
+                <p>
+                    Volcanoes are an exciting natural phenomenon that occurs at both divergent and convergent plate boundaries. They form when two plates collide, causing one plate to subduct below the other, resulting in magma uplift and ultimately a volcano! They also form when two tectonic plates drift away from each other, causing volcanic activity. The third way volcanoes can form is through hot spots, which form when a rising plume of magma burns through a tectonic plate. One example of this is the Hawaiian Islands. There are three main types of volcanoes: shield volcanoes, cinder cones, and stratovolcanoes, also known as composite volcanoes. Shield volcanoes have gently sloping sides, and their eruptions are more viscous than others. Cinder cones have very steep sides and are the typical image of a volcano. They are also the most common type! Stratovolcanoes tend to resemble a mountain, often with snow-covered peaks, and are extremely large.
+                </p>
+            </div>
+            <div>
+                <iframe width="400" height="300" src="https://www.youtube.com/embed/cnKoTlUaqAs" title="What Are Volcanoes? Crash Course Geography #21"></iframe>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div>
+<div id="Earthquakes"></div>
+                <h2>Earthquakes</h2>
+                <p>
+                    An earthquake is when two blocks of earth suddenly slip past one another. This area is referred to as the fault. An earthquake originates at a hypocenter, and directly above that is referred to as the epicenter. Sometimes we feel small earthquakes referred to as foreshocks, which are often followed by much larger earthquakes. These larger earthquakes are referred to as mainshocks. Earthquakes are measured by seismographs that read the waves traveling through the Earth. There are P waves that compress and stretch the Earth's crust in a parallel direction. Then there are S waves, which cause the earth's crust to move back and forth perpendicular to the surface.
+                </p>
+                 <img src="earthquake.png" alt="Earthquake" style="max-width:100%; height:auto; display:block; margin:0 auto;">
+            </div>
+            </div>
+        <div class="grid-item">
+            <div>
+<div id="Climate"></div>
+                <h2>Weather and Climate</h2>
+                <p>Climate and weather are often confused together. Weather refers to our day-to-day atmospheric conditions, whereas climate is the average of these conditions over hundreds of years. Over the years, scientists have observed that our Earth is warming dramatically, and humans have significantly contributed to this change. We have seen an increase in extreme weather, disappearing sea ice, fires, drought, record highs, record lows, and ecosystems failing. All of these are not only taking a toll on ecosystems but also on humans. The climate is slowly warming has caused impacts on us that we may not know about. If you take a look at your local weather, you will see much more extremes or increased severe weather.</p>
+                <p>If you want to test your knowledge follow this link to take a quick quiz! <a href="https://cleanet.org/clean/literacy/climate/quiz.html" target="_blank">Climate Quiz</a></p>
+            <div class="climate-video-container" style="margin: 24px 0;">
+                <video controls style="width:100%; max-width:600px; height:auto; display:block; margin:0 auto;">
+                    <source src="climatevideo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+    </main>
+<footer>      
+        <p>
+        <img class="icon-hover" src="emailicon.png" alt="Email Icon" style="vertical-align:middle; width:20px; height:20px; margin-right:8px;">
+        <a href="mailto:lmshwk@umsystem.edu">lmshwk@umsystem.edu</a> (©Lydia Sullivan 2025)
+        </p>
+    <br>
+       <p><img class="icon-hover" src="phoneicon.png" alt="Phone Icon" style="vertical-align:middle; width:20px; height:20px; margin-right:8px;"> 1+888-888-8888. </p>
+    </footer>
+</body>
+</html>

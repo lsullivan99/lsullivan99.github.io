@@ -8,8 +8,9 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/png" href="favicon-16x16.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
         body {
             font-family: Arial, sans-serif;
@@ -36,11 +37,13 @@
         footer {
             text-align: center;
             padding: 10px 0;
-            background-color: #4e81a0;
-            color: #ffffff;
-            position: relative;
+            color: #0b0303;
             bottom: 0;
             width: 100%;
+        background-image: url('footer_earth.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
         }
         .dropdown {
             position: relative;
@@ -60,14 +63,15 @@
             cursor: pointer;
         }
         </style>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="nav.css">
-    <link rel="stylesheet" href="flexbox.css">
-    <title>Resources</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="nav.css">
+        <title>Home Page</title>
 </head>
 <body>
-     <nav>
-<a href="#" id="menu-icon">&#9776;</a>
+        <nav>
+<input type="checkbox" id="menu-toggle">
+
+<label for="menu-toggle" id="hamburger">&#9776;</label>
 <ul>
         <li class="active">
                 <a href="index.html">Home</a>
@@ -76,12 +80,12 @@
                 <a href="about.html">About</a>
                 </li>
         <li>
-                <a href="#learn.html">Learn</a>
+                <a href="learn.html">Learn</a>
                 <ul id="mobileHide">
                         <!-- Links for the dropdown menu -->
-                        <li><a href="#link 1">Link 1</a></li>
-                        <li><a href="#Link 2">Link 2</a></li>
-                        <li><a href="#Link 3">Link 3</a></li>
+                    <li><a href="Volcanoes">Volcanoes</a></li>
+                    <li><a href="Earthquakes">Earthquakes</a></li>
+                    <li><a href="Climate">Weather & Climate</a></li>
                 </ul>       
         </li>
         <li>
@@ -95,6 +99,8 @@
         <h1>Resource Page</h1>
     </header>
     <main>
+        <br>
+                <br>
         <h2>Sources Cited</h2>
         <div class="grid-container">
             <div class="grid-item">
@@ -135,7 +141,12 @@
             </div>
             </main>
 
-    <footer>
-      <p><a href="mailto:lmshwk@umsystem.edu">lmshwk@umsystem.edu</a> (©Lydia Sullivan 2025)</p>
+  <footer>      
+        <p>
+        <img class="icon-hover" src="emailicon.png" alt="Email Icon" style="vertical-align:middle; width:20px; height:20px; margin-right:8px;">
+        <a href="mailto:lmshwk@umsystem.edu">lmshwk@umsystem.edu</a> (©Lydia Sullivan 2025)
+        </p>
+    <br>
+        <p><img class="icon-hover" src="phoneicon.png" alt="Phone Icon" style="vertical-align:middle; width:20px; height:20px; margin-right:8px;"> 1+888-888-8888. </p>
     </footer>
 </html>
