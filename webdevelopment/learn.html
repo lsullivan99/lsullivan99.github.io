@@ -61,6 +61,19 @@
         .dropbtn {
             cursor: pointer;
         }
+            .video-container {
+      position: relative;
+      width: 100%;
+      max-width: 800px; /* max width on desktop */
+      margin: 20px auto;
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
         </style>
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="nav.css">
@@ -68,31 +81,23 @@
 </head>
 <body>
 <nav>
-<input type="checkbox" id="menu-toggle">
+  <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle" id="hamburger">&#9776;</label>
 
-<label for="menu-toggle" id="hamburger">&#9776;</label>
-<ul>
-        <li class="active">
-                <a href="index.html">Home</a>
-                </li>
-        <li>
-                <a href="about.html">About</a>
-                </li>
-        <li>
-                <a href="learn.html">Learn</a>
-                <ul id="mobileHide">
-                        <!-- Links for the dropdown menu -->
-                    <li><a href="#Volcanoes">Volcanoes</a></li>
-                    <li><a href="#Earthquakes">Earthquakes</a></li>
-                    <li><a href="#Climate">Weather & Climate</a></li>
-                </ul>       
-        </li>
-        <li>
-                <a href="reference.html">Resources</a>
-                <li class="lastMobileHide">
-                <a href="#contact.html">Contact</a>
-        </li>
-</ul> 
+  <ul class="menu">
+    <li class="active"><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li>
+      <a href="learn.html">Learn</a>
+      <ul class="submenu">
+        <li><a href="#Volcanoes">Volcanoes</a></li>
+        <li><a href="#Earthquakes">Earthquakes</a></li>
+        <li><a href="#Climate">Weather & Climate</a></li>
+      </ul>
+    </li>
+    <li><a href="reference.html">Resources</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
 </nav>
     <header>
         <h1>Let's Learn!</h1>
@@ -130,12 +135,12 @@
                 <h2>Weather and Climate</h2>
                 <p>Climate and weather are often confused together. Weather refers to our day-to-day atmospheric conditions, whereas climate is the average of these conditions over hundreds of years. Over the years, scientists have observed that our Earth is warming dramatically, and humans have significantly contributed to this change. We have seen an increase in extreme weather, disappearing sea ice, fires, drought, record highs, record lows, and ecosystems failing. All of these are not only taking a toll on ecosystems but also on humans. The climate is slowly warming has caused impacts on us that we may not know about. If you take a look at your local weather, you will see much more extremes or increased severe weather.</p>
                 <p>If you want to test your knowledge follow this link to take a quick quiz! <a href="https://cleanet.org/clean/literacy/climate/quiz.html" target="_blank">Climate Quiz</a></p>
-            <div class="climate-video-container" style="margin: 24px 0;">
-                <video controls style="width:100%; max-width:600px; height:auto; display:block; margin:0 auto;">
-                    <source src="climatevideo.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
+            <div class="video-container">
+    <video controls>
+      <source src="https://cdn.serc.carleton.edu/files/clean/literacy/climate/clean_principle_4_climate_variable_video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
         </div>
     </div>
     </main>
@@ -144,7 +149,6 @@
         <img class="icon-hover" src="emailicon.png" alt="Email Icon" style="vertical-align:middle; width:20px; height:20px; margin-right:8px;">
         <a href="mailto:lmshwk@umsystem.edu">lmshwk@umsystem.edu</a> (©Lydia Sullivan 2025)
         </p>
-    <br>
        <p><img class="icon-hover" src="phoneicon.png" alt="Phone Icon" style="vertical-align:middle; width:20px; height:20px; margin-right:8px;"> 1+888-888-8888. </p>
     </footer>
 </body>
