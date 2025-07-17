@@ -62,3 +62,78 @@ h1 {
         margin: 1in;
     }
 }
+figcaption {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center; /* Center the heading */
+}
+ .table-container {
+      width: 60%;
+      margin: 20px auto;
+    }
+
+    table {
+      width: 100%;
+      border: 2px solid #000;
+      border-collapse: collapse;
+    }
+
+    caption {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-align: center;
+      caption-side: top;
+    }
+
+    th, td {
+      padding: 12px;
+      border: 1px solid #000;
+      text-align: left;
+    }
+
+    thead tr,
+    tbody tr:last-child {
+      background-color: #f0f0f0; /* First and last row same color */
+    }
+
+    tbody tr:nth-child(odd):not(:last-child) {
+      background-color: #ffffff;
+    }
+
+    tbody tr:nth-child(even):not(:last-child) {
+      background-color: #e9f5ff;
+    }
+ @media (max-width: 600px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+      }
+
+      thead {
+        display: none;
+      }
+
+      tr {
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        padding: 10px;
+      }
+
+      td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+      }
+
+      td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: 45%;
+        font-weight: bold;
+        white-space: nowrap;
+      }
+    }
