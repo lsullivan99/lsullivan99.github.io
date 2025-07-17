@@ -87,6 +87,49 @@
          body {
       font-family: Arial, sans-serif;
     }
+    figcaption {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center; /* Center the heading */
+}
+ .table-container {
+      width: 60%;
+      margin: 20px auto;
+    }
+
+    table {
+      width: 100%;
+      border: 2px solid #000;
+      border-collapse: collapse;
+    }
+
+    caption {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-align: center;
+      caption-side: top;
+    }
+
+    th, td {
+      padding: 12px;
+      border: 1px solid #000;
+      text-align: left;
+    }
+
+    thead tr,
+    tbody tr:last-child {
+      background-color: #f0f0f0; /* First and last row same color */
+    }
+
+    tbody tr:nth-child(odd):not(:last-child) {
+      background-color: #ffffff;
+    }
+
+    tbody tr:nth-child(even):not(:last-child) {
+      background-color: #e9f5ff;
+    }
 
     </style>
         
