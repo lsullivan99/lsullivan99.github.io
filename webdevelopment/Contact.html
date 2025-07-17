@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+          <link rel="shortcut icon" type="image/png" href="favicon-16x16.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+     body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+
+    .contact-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Responsive design for mobile */
+    @media (max-width: 600px) {
+      .contact-container {
+        padding: 20px;
+      }
+
+      input, textarea {
+        font-size: 1em;
+      }
+
+      button {
+        font-size: 1em;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="nav.css">
+    <title>Contact</title>
+<nav>
+  <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle" id="hamburger">&#9776;</label>
+
+  <ul class="menu">
+    <li class="active"><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li>
+      <a href="learn.html">Learn</a>
+      <ul class="submenu">
+        <li><a href="#Volcanoes">Volcanoes</a></li>
+        <li><a href="#Earthquakes">Earthquakes</a></li>
+        <li><a href="#Climate">Weather & Climate</a></li>
+      </ul>
+    </li>
+    <li><a href="reference.html">Resources</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+ 
+
+</head>
+<body>
+    <header>
+        <h1>Contact</h1>
+    </header>
+    <main>
+     <div class="contact-container">
+    <h2>Contact Us</h2>
+    <form action="#" method="post">
+      <label for="firstName">First Name</label>
+      <input
+        type="text"
+        id="firstName"
+        name="firstName"
+        placeholder="Enter your first name"
+        required
+        autofocus
+      />
+
+      <label for="lastName">Last Name</label>
+      <input
+        type="text"
+        id="lastName"
+        name="lastName"
+        placeholder="Enter your last name"
+        required
+      />
+
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email address"
+        required
+      />
+
+      <label for="message">Message</label>
+      <textarea
+        id="message"
+        name="message"
+        placeholder="Type your message here..."
+        required
+      ></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </div>
+    </main>
+ <footer>      
+        <p>
+                <img class="icon-hover" src="emailicon.png" alt="Email Icon" style="vertical-align:middle; width:20px; height:20px; margin-right:8px;">
+                <a href="mailto:lmshwk@umsystem.edu">lmshwk@umsystem.edu</a> (©Lydia Sullivan 2025)
+        </p>
+        <p><img class="icon-hover" src="phoneicon.png" alt="Phone Icon" style="vertical-align:middle; width:20px; height:20px; margin-right:8px;"> 1+888-888-8888. </p>
+    </footer>
+</html>
