@@ -83,7 +83,7 @@ figcaption {
       font-size: 1.5em;
       font-weight: bold;
       margin-bottom: 10px;
-      text-align: center;
+      text-align: center; /* Center the caption */
       caption-side: top;
     }
 
@@ -106,7 +106,7 @@ figcaption {
       background-color: #e9f5ff;
     }
  @media (max-width: 600px) {
-      table, thead, tbody, th, td, tr {
+      table, tbody, th, td, tr {
         display: block;
         width: 100%;
       }
@@ -118,14 +118,14 @@ figcaption {
       tr {
         margin-bottom: 15px;
         border: 1px solid #ccc;
-        padding: 10px;
+        padding: 0px;
       }
 
       td {
         border: none;
         border-bottom: 1px solid #eee;
         position: relative;
-        padding-left: 50%;
+        padding-left: 0%;
       }
 
       td::before {
