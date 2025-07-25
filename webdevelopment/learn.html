@@ -11,6 +11,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+    .grid_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -36,7 +43,7 @@
         footer {
             text-align: center;
             padding: 10px 0;
-            color: #0b0303;
+            color: #f2f2f2;
             bottom: 0;
             width: 100%;
         background-image: url('footer_earth.png');
@@ -103,10 +110,8 @@
         <h1>Let's Learn!</h1>
     </header>
     <main>
-         <div class="grid-container"></div>
-        <div class="grid-item">
-            <div>
-                <div id="Volcanoes"></div>
+        <div class="grid-container">
+                <div class="grid-item">
                 <br>
                 <br>
                 <h2>Volcanoes</h2>
@@ -116,22 +121,17 @@
                 </p>
             </div>
             <div>
-                <iframe width="400" height="300" src="https://www.youtube.com/embed/cnKoTlUaqAs" title="What Are Volcanoes? Crash Course Geography #21"></iframe>
+                <iframe width="350" height="250" src="https://www.youtube.com/embed/cnKoTlUaqAs" title="What Are Volcanoes? Crash Course Geography #21"></iframe>
             </div>
         </div>
         <div class="grid-item">
-            <div>
-<div id="Earthquakes"></div>
                 <h2>Earthquakes</h2>
                 <p>
                     An earthquake is when two blocks of earth suddenly slip past one another. This area is referred to as the fault. An earthquake originates at a hypocenter, and directly above that is referred to as the epicenter. Sometimes we feel small earthquakes referred to as foreshocks, which are often followed by much larger earthquakes. These larger earthquakes are referred to as mainshocks. Earthquakes are measured by seismographs that read the waves traveling through the Earth. There are P waves that compress and stretch the Earth's crust in a parallel direction. Then there are S waves, which cause the earth's crust to move back and forth perpendicular to the surface.
                 </p>
                  <img src="earthquake.png" alt="Earthquake" style="max-width:100%; height:auto; display:block; margin:0 auto;">
             </div>
-            </div>
         <div class="grid-item">
-            <div>
-<div id="Climate"></div>
                 <h2>Weather and Climate</h2>
                 <p>Climate and weather are often confused together. Weather refers to our day-to-day atmospheric conditions, whereas climate is the average of these conditions over hundreds of years. Over the years, scientists have observed that our Earth is warming dramatically, and humans have significantly contributed to this change. We have seen an increase in extreme weather, disappearing sea ice, fires, drought, record highs, record lows, and ecosystems failing. All of these are not only taking a toll on ecosystems but also on humans. The climate is slowly warming has caused impacts on us that we may not know about. If you take a look at your local weather, you will see much more extremes or increased severe weather.</p>
                 <p>If you want to test your knowledge follow this link to take a quick quiz! <a href="https://cleanet.org/clean/literacy/climate/quiz.html" target="_blank">Climate Quiz</a></p>
@@ -141,7 +141,6 @@
       Your browser does not support the video tag.
     </video>
   </div>
-        </div>
     </div>
     </main>
 <footer>      

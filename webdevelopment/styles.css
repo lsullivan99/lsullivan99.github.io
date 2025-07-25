@@ -106,7 +106,7 @@ figcaption {
       background-color: #e9f5ff;
     }
  @media (max-width: 600px) {
-      table, tbody, th, td, tr {
+      table, thead, tbody, th, td, tr {
         display: block;
         width: 100%;
       }
@@ -134,7 +134,8 @@ figcaption {
         left: 10px;
         width: 45%;
         font-weight: bold;
-        white-space: nowrap;
+        white-space: wrap;
+        text-align: left;
       }
     }
     body {
@@ -162,7 +163,7 @@ figcaption {
         footer {
             text-align: center;
             padding: 10px 0;
-            color: #0b0303;
+            color: #f00d77;
             bottom: 0;
             width: 100%;
         background-image: url('footer_earth.png');
@@ -201,3 +202,43 @@ figcaption {
         font-size: 1em;
       }
     }
+    .grid_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    /* Desktop / large screens: keep current flex layout */
+.grid_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Mobile: stack grid-items in single column */
+@media (max-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr; /* single column */
+    gap: 16px;
+    padding: 10px;
+  }
+
+  .grid-item {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  iframe {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .video-container video {
+    max-width: 100%;
+    height: auto;
+  }
+}
